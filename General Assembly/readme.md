@@ -4,6 +4,6 @@
 ### :neckbeard: Programming Languages: HTML, CSS and JavaScript
 
 ## PROJECT 1: BUILD A PERSONAL WEBSITE
-[Imgur](https://i.imgur.com/ZBezOdL.png)
+![Imgur](https://i.imgur.com/ZBezOdL.png)
 
 ## PROJECT 2: BUILD A RESPONSIVE BLOG THEME
