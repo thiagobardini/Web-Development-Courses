@@ -7,3 +7,4 @@
 ![Imgur](https://i.imgur.com/ZBezOdL.png)
 
 ## PROJECT 2: BUILD A RESPONSIVE BLOG THEME
+![Imgur](https://i.imgur.com/XQETt2b.png)
