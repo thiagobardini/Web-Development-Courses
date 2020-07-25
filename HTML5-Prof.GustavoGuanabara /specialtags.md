@@ -1,18 +1,20 @@
-<h1>SPECIAL TAGS</h1>
+# SPECIAL TAGS
 
- <p>
-     video&shy;con&shy;ferên&shy;cia - &shy  gerar a separação de sílabas com hifenização. (-)
-     <br>
-     <wbr> wbr - criar quebra de palavras 
-     <br>
-     &nbsp; nbsp - it is a "space" 
-     <br>
-
- </p>
-
-
-<h1>Símbolos especiais</h1>
+- ```<wbr>``` wbr - criar quebra de palavras 
+- ```&nbsp;``` - it is "space" 
+- ```<i>``` - Itálico
+- ```<b>``` - para negrito
+- ```<em>``` - enfase
+    - ```<i> e <em>``` os dois fazem as palavras ficarem inclinada, mas semanticamente ```<em>``` estar dizendo para navegador que vc quer enfatizar esse termo, não somente a palavra inclinada
+- ```<u>``` - a tag underline foi depreciada no HTML5, era usado no HTML3, hj underline é utilizado com CSS
+- ```<del>``` - <del> é a palavra riscada
+- ```<span>``` - utilizada para formatar pequenos texto
+    - ex: ```<span style="text-decoration: underline;>```
+    ```<span style="text-decoration: overline;>```
+    <span style="text-decoration: overline;>linha acima do texto</span>
+## Símbolos especiais
 <p>
+    video&shy;con&shy;ferên&shy;cia - &shy  gera a separação de sílabas com hifenização. (-)
     &lt; menor que... 
     <br>
     &gt; maior que...
