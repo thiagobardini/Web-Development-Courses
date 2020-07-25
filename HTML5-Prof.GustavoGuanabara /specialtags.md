@@ -9,9 +9,20 @@
 - ```<u>``` - a tag underline foi depreciada no HTML5, era usado no HTML3, hj underline é utilizado com CSS
 - ```<del>``` - <del> é a palavra riscada
 - ```<span>``` - utilizada para formatar pequenos texto
-    - ex: ```<span style="text-decoration: underline;>```
-    ```<span style="text-decoration: overline;>```
-    <span style="text-decoration: overline;>linha acima do texto</span>
+    - ex: ```<span style="text-decoration: underline;>``` linha underline
+    - ```<span style="text-decoration: line-through;>``` é o riscado igual o ```<del>```, mas com significado sematico diferente
+    - ```<span   style="text-decoration: overline;">``` linha acima do texto
+    - ```<span style="text-decoration: none;">``` que não altera em nada o texto, mas semanticamente, ele bloqueia alteração que vem no CSS por exemplo.
+    - ```<span style="font-weight:normal;">``` o paramento font-weight vai criar a quantidade de negrito que palavra terá
+        - ```normal``` - sem efeito
+        - ```bold``` - negrito
+        - ```bolder``` - mais negrito
+        - ```100 até 900``` - usando de 100 até 900 de % negrito
+- ```style``` - para alinhamento, antigamente se usava ```align```. 
+    - ```<h2 style:"text-align: left;">``` usando para esquerda
+        - ```right``` para direita
+        - ```center``` para centralizar    
+
 ## Símbolos especiais
 <p>
     video&shy;con&shy;ferên&shy;cia - &shy  gera a separação de sílabas com hifenização. (-)
