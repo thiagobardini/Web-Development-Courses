@@ -65,7 +65,7 @@
 
 - ```<img src="_imagens/fundo.jpg"/>``` -> a foto veio do arquivo.
 
-- A tag WIDTH para dimensionar a imagem foi depreciada no HTML5, mas alguns professores continuam ensinando dessa maneira: 
+- A tag WIDTH ou HEIGHT serve para dimensionar a imagem foi depreciada no HTML5, mas alguns professores continuam ensinando dessa maneira: 
     - ```<img src="_imagens/fundo.jpg" width="200"/>``` 
         - O problema: o arquivo mesmo sendo minimizado com o HTML5 não altera o seu tamanho original, fazendo o download da imagem no formato original. Sendo assim, o arquivo minimizado vai estar demandando mais processamento do que tamanho exibido no HTML5, fazendo o site ficar mais pesado.      
 
@@ -91,6 +91,23 @@
 </figure>
 ```
 
+
+## CSS 
+
+- ```<link rel="stylesheet" type="text/css" href="_css/estilo.css"/>``` Essa formatação serve para chamar o arquivo CSS fora do arquivo html.  
+    - CSS externo -> utilizamos a tag LINK com o parâmetro REL de valor STYLESHEET.
+
+- ``` /* */``` /* Formatação de imagens com legendas */
+
+- Class -> <figure class="foto-legendas">
+    - No CSS sempre que usar o paramentro class, vc vai colocar o nome da tag, ponto o nome da class no CSS. 
+    - figure.foto-legendas { }
+
+- POSITION - Relative e Absolute
+    - Utilizando o POSITION em CSS – Diferença entre RELATIVE e ABSOLUTE Existem dois tipos de posicionamento para CSS: com o POSITION RELATIVE, ele terá a localização feita em relação à sua posição atual. Para POSITION ABSOLUTE, ele terá a localização feita em relação a todo o conteúdo.
+- BOX-SIZING -> CSS com BOX-SIZING com o parâmetro BORDER-BOX.
+- OPACITY -> Cria transparencia 0 = 100% transparencia  / 1 = 100% sem transparencia
+- TRANSITION -> ```transition: opacity 1s;``` usando trasition o objeto vai levar 1 segundo para aparecer
 ## Símbolos especiais
 <p>
     video&shy;con&shy;ferên&shy;cia - &shy  gera a separação de sílabas com hifenização. (-)
