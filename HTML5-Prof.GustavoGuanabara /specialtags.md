@@ -58,6 +58,39 @@
 -``` color: rgba(0,0,0,0.5);```  RGB = vermelho/red (60), verde/green (45) e azul/blue (3E) - Cada valor é representado em base hexadecimal. ```A``` representa alpha, que vai de 0 até 1.
 -  ```background-color: hsla(165, 81%, 93%, 0.5);```   hls() cria cores utilizando a representação percentual de Matiz (Hue), saturação (Saturation) e luminosidade (Brightness). Tbm podendo utilizar hlsa() ```A``` representando o Alpha.
 
+## Imagens em HTML5
+
+- Arquivo PNG ->  é usado quando tem a necessidade de uma qualidade muito boa ou fotos em TRANSPARENCIA.
+- ARQUIVO JPGE -> é mais indicado, pois não utiliza muito processamento e deixa seu site mais leve.
+
+- ```<img src="_imagens/fundo.jpg"/>``` -> a foto veio do arquivo.
+
+- A tag WIDTH para dimensionar a imagem foi depreciada no HTML5, mas alguns professores continuam ensinando dessa maneira: 
+    - ```<img src="_imagens/fundo.jpg" width="200"/>``` 
+        - O problema: o arquivo mesmo sendo minimizado com o HTML5 não altera o seu tamanho original, fazendo o download da imagem no formato original. Sendo assim, o arquivo minimizado vai estar demandando mais processamento do que tamanho exibido no HTML5, fazendo o site ficar mais pesado.      
+
+- Photoshop ou Gimp -> Usado para reduzir a escala da imagem.
+    - Depois salvar em formato JPG or PNG 
+        - No Photoshop ->  SALVAR PARA WEB -> tem as opções:
+            - JPG Baixo -> baixa resolução
+            - JPG Média -> média resolução
+            - JPG Alta -> alta resolução (indicado) 
+            - JPG Muita Alta -> Mais alta resolução
+            - JPG Maxima -> maxima resolução
+        - No Gimp -> EXPORT AS -> Save as JPG or PNG
+
+- ````<figure>```` -> serve para criar uma semantica para imagem, criando uma legenda para a imagem.
+- ````<figcaption>````-> serve para criar uma legenda para imagem.
+```
+<figure>
+    <img src="_imagens/fundo.jpg"/>
+    <figcaption>
+        <h3>Google Glass</h3>
+        <p>Uma nova maneira de ver o mundo.</p>
+    </figcaption>
+</figure>
+```
+
 ## Símbolos especiais
 <p>
     video&shy;con&shy;ferên&shy;cia - &shy  gera a separação de sílabas com hifenização. (-)
