@@ -25,22 +25,25 @@
         - ```justify```estilo justificado 
 - ```text-indent:``` é utilizado para paragrafo, sendo 1 até 100
     - ```<h2 style:"text-align: left; text-indent:50">``` 
-- ```
-<hr>
 
-```<p>Exemplos de <sup>Formatação</sup></p>```
-```<p> x<sup> 2</sup> e H<sub>2</sub>O</p>```
+
+
+````
+<p>Exemplos de <sup>Formatação</sup></p>```
+<p> x<sup> 2</sup> e H<sub>2</sub>O</p>```
+````
 <p>Exemplos de <sup>Formatação</sup></p>
 <p> x<sup> 2</sup> e H<sub>2</sub>O</p>
 
-<hr>
 
 - ```<code>```serve para exibir codigo no navegador
 - ```<pre>```é usado para deixa o pré formatado
     - ```&lt```é para < 
     - ```&gt```é para >
  ```
- <pre>
+ // Código de C++
+
+ <pre> 
  <code>
  #include &lt;iostream&gt;
  int main() {
