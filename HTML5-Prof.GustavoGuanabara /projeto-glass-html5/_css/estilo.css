@@ -41,3 +41,27 @@ figure.foto-legenda:hover figcaption {
   opacity: 1; /* 1 é igual a transparencia 100% */
   transition: opacity 1s; /* usando trasition a legenda vai levar 1 segundo para aparecer*/
 }
+
+/* Formatação do Menu */
+nav#menu {
+  display: block; /* display block vai fazer que q o container flutue na tela. */
+}
+
+nav#menu ul {
+  list-style: none; /* vai tirar a marcação do UL */
+  text-transform: uppercase; /* todas as palavras em letras MAIÚSCULA */
+  position: absolute; /* Sendo que nav#menu já está como display block, usando o position absolute o containeir pode passar por cima dos documentos em qualquer lugar da pagina (livre dentro do site). Se usar position RELATIVA eu posso posicionar containeir por cima dos documentos que esse mini container estiver dentro (dentro do container)*/
+  top: -20px; /* movimentando para o topo */
+  left: 300px;
+}
+
+nav#menu li {
+  display: inline-block; /* inline-block -> vai fazer ficar na mesma linha em blocos */
+  background-color: #dddddd; /* cor do fundo */
+  padding: 10px; /* vai criar um espaço dentro dos botoes */
+  margin: 2px; /* vai criar um espaço fora dos botões */
+}
+
+nav#menu h1 {
+  display: none; /* vai escoder tudo que for h1 */
+}

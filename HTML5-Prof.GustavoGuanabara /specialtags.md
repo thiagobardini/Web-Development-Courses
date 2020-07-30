@@ -54,16 +54,46 @@
 </pre>
 ```
 
-## Color CSS
--``` color: rgba(0,0,0,0.5);```  RGB = vermelho/red (60), verde/green (45) e azul/blue (3E) - Cada valor é representado em base hexadecimal. ```A``` representa alpha, que vai de 0 até 1.
--  ```background-color: hsla(165, 81%, 93%, 0.5);```   hls() cria cores utilizando a representação percentual de Matiz (Hue), saturação (Saturation) e luminosidade (Brightness). Tbm podendo utilizar hlsa() ```A``` representando o Alpha.
+## Listas em HTML5 com OL e UL
+- ```<nav>```é uma tag criada no HTML5 para barra de navegação
+- ```<ol>```lista ordenada ou Ordered lists
+    -  ```<ol type="1">``` TYPE -> temos 5 tipos de listas ordenadas: 1, A, a, i, I (# romanos)
+    - ```<ol type="1" start="3">``` o START indica que a ordemed lists vai começar com o número 3. Start só aceita valores númericos e romanos.       
+- ```<ul>```Unordered lists
+    - ```<ul type="square">``` TYPE -> temos 3 tipos de Unordered lists: CIRCLE, SQUARE ou DISC(valor padrão).
+
+Podemos também criar hierarquia com listas, utilizando tags OL e UL aninhadas. 
+        
+- ```<li>``` list items
+
+ exemplo:
+````
+<nav>
+  <h1>Menu Principal</h1>
+  <ol>
+    <li>Home</li>
+    <li>Especificações</li>
+    <li>Fotos</li>
+    <li>Multimídia</li>
+    <li>Fale conosco</li>
+  </ol>
+</nav>
+````
+
+## Links em HTML5
+ - ```<a href="https://www.google.com/glass/start/" target="_blank">```
+    - a tag ```<a>```  é conhecida coomo ancora 
+    - href - é o site de referencia
+    - target="_blank" -> é para abrir o site em outra aba. 
+    - target="_self" _> é para abrir na mesma a pagina o site (não tem necessidade de usar o _self, pq por padrão ja abri na mesma pagina)
 
 ## Imagens em HTML5
 
 - Arquivo PNG ->  é usado quando tem a necessidade de uma qualidade muito boa ou fotos em TRANSPARENCIA.
 - ARQUIVO JPGE -> é mais indicado, pois não utiliza muito processamento e deixa seu site mais leve.
 
-- ```<img src="_imagens/fundo.jpg"/>``` -> a foto veio do arquivo.
+- ```<img src="_imagens/fundo.jpg"/>``` -> a foto veio do arquivo. 
+    - src -> source
 
 - A tag WIDTH ou HEIGHT serve para dimensionar a imagem foi depreciada no HTML5, mas alguns professores continuam ensinando dessa maneira: 
     - ```<img src="_imagens/fundo.jpg" width="200"/>``` 
@@ -108,6 +138,46 @@
 - BOX-SIZING -> CSS com BOX-SIZING com o parâmetro BORDER-BOX.
 - OPACITY -> Cria transparencia 0 = 100% transparencia  / 1 = 100% sem transparencia
 - TRANSITION -> ```transition: opacity 1s;``` usando trasition o objeto vai levar 1 segundo para aparecer
+
+
+## Color CSS
+
+- ``` color: rgba(0,0,0,0.5);```  RGB = vermelho/red (60), verde/green (45) e azul/blue (3E) - Cada valor é representado em base hexadecimal. ```A``` representa alpha, que vai de 0 até 1.
+-  ```background-color: hsla(165, 81%, 93%, 0.5);```   hls() cria cores utilizando a representação percentual de Matiz (Hue), saturação (Saturation) e luminosidade (Brightness). Tbm podendo utilizar hlsa() ```A``` representando o Alpha.
+
+## Menu com CSS3
+- ```<nav id="menu">```criei no HTML um ID chamado de menu
+    - ```nav#menu { }``` na pagina do CSS (estilo.css ), crie o nav#menu para a formatação. 
+        - O ```#``` é usado sempre para ID.
+
+````
+/* Formatação do Menu */
+nav#menu {
+  display: block; /* display block vai fazer que q o container flutue na tela. */
+}
+
+nav#menu ul {
+  list-style: none; /* vai tirar a marcação do UL */
+  text-transform: uppercase; /* todas as palavras em letras MAIÚSCULA */
+  position: absolute; /* Sendo que nav#menu já está como display block, usando o position absolute o containeir pode passar por cima dos documentos em qualquer lugar da pagina (livre dentro do site). Se usar position RELATIVA eu posso posicionar containeir por cima dos documentos que esse mini container estiver dentro (dentro do container)*/
+  top: -20px; /* movimentando para o topo */
+  left: 300px;
+}
+
+nav#menu li {
+  display: inline-block; /* inline-block -> vai fazer ficar na mesma linha em blocos */
+  background-color: #dddddd; /* cor do fundo */
+  padding: 10px; /* vai criar um espaço dentro dos botoes */
+  margin: 2px; /* vai criar um espaço fora dos botões */
+}
+
+nav#menu h1 {
+  display: none; /* vai escoder tudo que for h1 */
+}
+````
+
+
+
 ## Símbolos especiais
 <p>
     video&shy;con&shy;ferên&shy;cia - &shy  gera a separação de sílabas com hifenização. (-)
