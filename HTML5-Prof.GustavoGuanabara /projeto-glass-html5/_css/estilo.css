@@ -3,8 +3,16 @@
 
 body {
     
-  background-color:white;
+  background-color: #dddddd;
   color: rgba(0,0,0,1);
+}
+
+#interface {
+  width: 900px;
+  background-color: #ffffff;
+  margin: -20px auto 0px auto; /* Margin é a área externa. Sequencia do valores: acima, direita, abaixo, esquerda */
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* Serve para sobra -> Valores: desclocamento lateral, deslocamento vertical, espalhamento da sombra e cor da sobra*/
+  padding: 10px; /* Padding é a área interna. Sequencia do valores: acima, direita, abaixo, esquerda */
 }
 
 p {
@@ -12,6 +20,11 @@ p {
   text-indent: 50px;
 } 
 
+#cabecalho img#icone {
+  position: absolute;
+  left: 780px;
+  top: 40px;
+}
 /* Formatação de imagens com legendas */
 
 figure.foto-legenda {
@@ -60,8 +73,23 @@ nav#menu li {
   background-color: #dddddd; /* cor do fundo */
   padding: 10px; /* vai criar um espaço dentro dos botoes */
   margin: 2px; /* vai criar um espaço fora dos botões */
+  transition: background-color 1s; /* transition vai fazer que hover apareça 1 segundo após o mouse estiver sobre o botão */
+}
+
+nav#menu li:hover {
+  background-color: #606060;
 }
 
 nav#menu h1 {
   display: none; /* vai escoder tudo que for h1 */
+}
+
+nav#menu a {
+  color: #000000;
+  text-decoration: none;
+}
+
+nav#menu a:hover {
+  color: white;
+  text-decoration: underline;
 }
