@@ -175,7 +175,21 @@ nav#menu h1 {
   display: none; /* vai escoder tudo que for h1 */
 }
 ````
+## Fontes em CSS
 
+````
+@font-face { 
+  font-family: FonteLogo; 
+  src: url(../_fonts/bubblegum-sans-regular.otf);
+} 
+````
+- O font-face é possível importar uma fonte.
+- font-family: FonteLogo;  A fonte pode ser renomeada, para ser utilizada no CSS, estarei usando o FonteLogo no header#cabecalho h1 { } 
+- src: url(../_fonts/bubblegum-sans-regular.otf); -> src = source é para importar no arquivo */
+
+
+- ```google.com/fonts``` O Google tbm é um repositório de fonts
+    - @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&family=Titillium+Web:wght@400;900&display=swap'); /* cópiei essa fonte do google.com/fonts */
 
 
 ## Símbolos especiais
