@@ -1,5 +1,10 @@
 @charset "UTF-8";
 /* UTF-8 é para utilizar a linguagem portugues*/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&family=Titillium+Web&display=swap'); /* cópiei essa fonte do google.com/fonts */
+@font-face { /* O font-face é possível importar uma fonte */
+  font-family: FonteLogo; /* A fonte pode ser renomeada, para ser utilizada no CSS, estarei usando o FonteLogo no header#cabecalho h1 { } */
+  src: url(../_fonts/bubblegum-sans-regular.otf); /* src = source é para importar no arquivo */
+} 
 
 body {
     
@@ -11,7 +16,7 @@ body {
   width: 900px;
   background-color: #ffffff;
   margin: -20px auto 0px auto; /* Margin é a área externa. Sequencia do valores: acima, direita, abaixo, esquerda */
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* Serve para sobra -> Valores: desclocamento lateral, deslocamento vertical, espalhamento da sombra e cor da sobra*/
+  box-shadow: 0px 0px 10px rgba(0,0,0,.5); /* Serve para sobra -> Valores: deslocamento lateral, deslocamento vertical, espalhamento da sombra e transparencia de 0.0 até 1 */
   padding: 10px; /* Padding é a área interna. Sequencia do valores: acima, direita, abaixo, esquerda */
 }
 
@@ -23,8 +28,35 @@ p {
 #cabecalho img#icone {
   position: absolute;
   left: 780px;
-  top: 40px;
+  top: 70px;
 }
+
+header#cabecalho {
+  border-bottom: 1px #606060 solid; /* borda -> sequencia: espessura, cor, formato da borda (solid, dashed(tracejada), inset, outset, dotted (pontilhado), doubled(mas enfase) */
+  height: 150px;
+  background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px; 
+  /* backgroun é fundo não é imagem -> url é para imagens que estão no arquivo -> .. (dois pontos) ele vai pra tras nos arquivos e acessa _imagens seguindo de / e a imagem (glass-logo-peq.jpg) */ 
+  /*->  no-repeat é para não repetir o fundo -> é possivel deslocar o objeto, sequencia: lateral e vertical*/
+}
+
+header#cabecalho h1 {
+  font-family: FonteLogo, sans-serif;
+  font-size: 30pt;
+  color: #606060;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.6); /* Serve para sobra -> Valores: deslocamento lateral, deslocamento vertical, espalhamento da sombra e transparencia de 0.0 até 1 */
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+header#cabecalho h2 { 
+  font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Titillium Web', sans-serif;
+  color: #888888;
+  font-size: 15pt;
+  padding: 0px;
+  margin-top: 0px;
+}
+
 /* Formatação de imagens com legendas */
 
 figure.foto-legenda {
