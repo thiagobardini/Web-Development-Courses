@@ -125,3 +125,26 @@ nav#menu a:hover {
   color: white;
   text-decoration: underline;
 }
+
+section#corpo {
+  display: block; /* Para o Float funcionar o display precisar estar com block */
+  width: 500px;
+  float: left;
+  border-right: 1px solid #606060; /* Vai criar uma borda, sequecia dos paramentos: espessura, tipo de linha e cor */
+  padding-right: 20px;
+}
+
+aside#lateral {
+  display: block; /* Para o Float funcionar o display precisar estar com block */
+  width: 350px;
+  float: right;
+}
+
+footer#rodape {
+  clear: both; /* O Clear BOTH vai fazer com que esse conteudo fique fora da divisao do aside e da section */
+  border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+  text-align: center;
+}

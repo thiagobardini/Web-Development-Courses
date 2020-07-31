@@ -121,6 +121,11 @@ Podemos também criar hierarquia com listas, utilizando tags OL e UL aninhadas.
 </figure>
 ```
 
+## Semantica em HTML5
+-  section 
+-  aside
+-  footer
+
 
 ## CSS 
 
