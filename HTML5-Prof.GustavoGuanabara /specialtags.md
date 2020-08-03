@@ -122,10 +122,41 @@ Podemos também criar hierarquia com listas, utilizando tags OL e UL aninhadas.
 ```
 
 ## Semantica em HTML5
--  section 
--  aside
--  footer
+-  ```<section>``` 
+-  ```<aside>```
+-  ```<footer>```
+-  ```<header>```
+-  ```<nav>```
+-  ```<article>```
 
+## Tabelas em HTML5
+- ```<table>``` tabela
+- ```<caption>``` Titulo
+
+- ```<tr>``` linhas da tabela
+- ```<td>``` células da tabela
+- ```<tr><td rowspan="2">``` o ROWSPAN  indica que a palavra TELA possui uma célula de duas LINHAS
+- ```<tr><td conspan="2">``` indica que a palavra TELA possui uma célula de duas COLUNAS
+
+- Difference between id and class attribute: The only difference between them is that “id” is unique in a page and can only apply to at most one element, while “class” selector can apply to multiple elements.
+    - ID -> Cada o objeto vai ter um ID. No CSS # representa ID
+    - CLASS -> uma class defini a formatação de vários objetos, mas eu posso usar a mesma class para o mesmo objeto. No CSS . (ponto) representa class 
+        - ```table#tabelaspec td.ce { }```.
+
+
+
+````
+<table id="tabelaspec">
+<h1>Especificações Técnicas</h1>
+
+<caption>Tabela Técnica do Google Glass Mar/2013</caption>
+
+<tr><td>Tela</td><td>Resolução equivalente a tela de 25"</td></tr>
+<tr><td>Camera</td> <td>5MP para fotos / 720p para vídeos</td></tr>
+<tr><td>Conectividade</td> <td>Wi-Fi/ Bluetooth</td></tr>
+<tr><td>Memória Interna</td> <td>12GB</td></tr>
+</table>
+`````
 
 ## CSS 
 
