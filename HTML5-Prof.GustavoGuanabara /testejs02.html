@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste javaScript</title>
+  <script>
+    function acendeLampada() {
+      document.getElementById("luz").src="../HTML5-Prof.GustavoGuanabara /projeto-glass-html5/_imagens/lampada-acesa.jpg"; // getElementbyID -> vai puxar o id luz no HTML
+    }
+    function apagaLampada() {
+      document.getElementById("luz").src="../HTML5-Prof.GustavoGuanabara /projeto-glass-html5/_imagens/lampada-apagada.jpg"; // getElementbyID -> vai puxar o id luz no HTML
+    }
+    function quebraLampada () {
+      document.getElementById("luz").src="../HTML5-Prof.GustavoGuanabara /projeto-glass-html5/_imagens/lampada-quebrada.jpg";
+    }
+  </script>
+</head>
+<body>
+  <h1>Acenda a Lâmpada</h1>
+
+  <img src="../HTML5-Prof.GustavoGuanabara /projeto-glass-html5/_imagens/lampada-apagada.jpg" id="luz" onmousemove="acendeLampada()" onmouseout="apagaLampada()" onclick="quebraLampada()"/> 
+  <!-- On Mouse Move - Faz uma ação quando o mouse passa por cima do objeto 
+  On Mouse Out - Faz uma ação quando o mouse sair do objeto On click - Faz uma ação quando eu clicar no objeto -->
+</body>
+</html>

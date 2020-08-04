@@ -53,6 +53,9 @@
 </code>
 </pre>
 ```
+-   ```<img src="_imagens/lampada-apagada.jpg" onclick="acendeLampada">``` On click - Faz uma ação quando o mouse passa por cima do objeto
+-   ```<img src="_imagens/lampada-apagada.jpg" onclick="acendeLampada">``` On click - Faz uma ação quando o mouse passa por cima do objeto
+- ``` onmousemove="acendeLampada()" ``` On Mouse Move - Faz uma ação quando o mouse passa por cima do objeto
 
 ## Listas em HTML5 com OL e UL
 - ```<nav>```é uma tag criada no HTML5 para barra de navegação
@@ -156,7 +159,8 @@ Podemos também criar hierarquia com listas, utilizando tags OL e UL aninhadas.
 <tr><td>Conectividade</td> <td>Wi-Fi/ Bluetooth</td></tr>
 <tr><td>Memória Interna</td> <td>12GB</td></tr>
 </table>
-`````
+
+````
 
 ## CSS 
 
@@ -226,6 +230,21 @@ nav#menu h1 {
 
 - ```google.com/fonts``` O Google tbm é um repositório de fonts
     - @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&family=Titillium+Web:wght@400;900&display=swap'); /* cópiei essa fonte do google.com/fonts */
+
+
+## JavaScript
+- ```<script>```Script é usado no HTML5 para utlizar o código JavaScript
+- ```alert("Olá, Mundo!");``` alert é para criar um pop-up com uma mensagem, finalizando com ponto e virgula (;)
+- ``` document.write("Olá, Mundo!");```document é uma tag padrao do JS e o write indica escrava, entao aqui está sinalizando para que JS escreva no documento o que está em parenteses
+- ```document.write("Olá, Hoje é dia " + Date());``` nesse exemplo eu chama a tag padrao DATE() vai mostrar a data do sistema.
+
+````
+  <script>
+    function acendeLampada() {
+      document.getElementById("luz").src="../HTML5-Prof.GustavoGuanabara /projeto-glass-html5/_imagens/lampada-acesa.jpg" // getElementbyID -> vai puxar o id luz no HTML
+    }
+  </script>
+````
 
 
 ## Símbolos especiais
