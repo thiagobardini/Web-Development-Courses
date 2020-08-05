@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste javaScript</title>
+  <script>
+    var quebrada = false;
+    function mudaLampada(tipo) {
+      if (tipo == 1) {
+        arquivo = "../HTML5-Prof.GustavoGuanabara /projeto-glass-html5/_imagens/lampada-acesa.jpg";
+      }
+      if (tipo == 2) {
+        arquivo = "../HTML5-Prof.GustavoGuanabara /projeto-glass-html5/_imagens/lampada-apagada.jpg";
+      }
+      if (tipo == 3) {
+        arquivo = "../HTML5-Prof.GustavoGuanabara /projeto-glass-html5/_imagens/lampada-quebrada.jpg";
+      }
+      if (!quebrada) {
+        document.getElementById("luz").src = arquivo;
+        if (tipo == 3) {
+          quebrada = true;
+        }
+      }
+    }
+
+  </script>
+</head>
+<body>
+  <h1>Acenda a Lâmpada</h1>
+
+  <img src="../HTML5-Prof.GustavoGuanabara /projeto-glass-html5/_imagens/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada('lampada-acesa')" onmouseout="mudaLampada('lampada-apagada')" onclick="mudaLampada('lampada-quebrada')"/> 
+  <!-- On Mouse Move - Faz uma ação quando o mouse passa por cima do objeto 
+  On Mouse Out - Faz uma ação quando o mouse sair do objeto On click - Faz uma ação quando eu clicar no objeto -->
+</body>
+</html>
