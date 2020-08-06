@@ -209,7 +209,7 @@ table#tabelaspec caption {
 table#tabelaspec caption span {
   display: block; /* vai criar um bloco para ser descolacado */
   float: right;
-  color: #000000;
+  color: #606060;
   font-size: 8pt;
   margin-top: 10px; /* deslocando o bloco para baixo */
 }
