@@ -10,6 +10,7 @@ body {
   font-family: arial, sans-serif;  
   background-color: #dddddd;
   color: rgba(0,0,0,1);
+  font-size: 11pt;
 }
 
 #interface {
@@ -135,7 +136,7 @@ nav#menu a:hover {
   text-decoration: underline;
 }
 
-section#corpo {
+#corpo {
   display: block; /* Para o Float funcionar o display precisar estar com block */
   width: 500px;
   float: left;
@@ -143,36 +144,38 @@ section#corpo {
   padding-right: 20px;
 }
 
+header#cabecalho-artigo h1 {
+  font-family: 'FonteLogo', sans-serif;
+  font-size: 20pt;
+  color: #606060;
+  margin-bottom: 0px;
+  margin-top: 15px;
+}
 article#noticia-principal h2 {
-  font-size: 13pt;
+  font-size: 14pt;
   color: #606060;
   background-color: #dddddd;
   padding: 5px 0px 5px 10px;
   margin: 10px 0px 10px 0px;
 }
 
-header#cabecalho-artigo h1 {
-  font-family: 'FonteLogo', sans-serif;
-  font-size: 20pt;
-  color: #606060;
-  margin-bottom: 0px;
-  margin-top: 0px;
-}
-
-.direita {
+header#cabecalho-artigo h3 {
   text-align: right;
+  color: #606060;
+  margin-bottom: 15px;
+  margin-top: 0px;
+  font-style: italic;
+  font-size: 8pt; 
 }
 
 header#cabecalho-artigo h2 {
-  font-size: 13pt;
+  font-size: 10pt;
   color: #cecece;
   background-color: #ffffff;
   margin: 0px;
+  margin-left: -10px;
 } 
 
-header#cabecalho-artigo h3 {
-  
-}
 
 table#tabelaspec {
   border: 1px solid #606060;
