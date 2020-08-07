@@ -36,7 +36,7 @@ a:hover {
 
 #cabecalho img#icone {
   position: absolute;
-  left: 780px;
+  left: 910px;
   top: 70px;
 }
 
@@ -106,7 +106,7 @@ nav#menu ul {
   text-transform: uppercase; /* todas as palavras em letras MAIÚSCULA */
   position: absolute; /* Sendo que nav#menu já está como display block, usando o position absolute o containeir pode passar por cima dos documentos em qualquer lugar da pagina (livre dentro do site). Se usar position RELATIVA eu posso posicionar containeir por cima dos documentos que esse mini container estiver dentro (dentro do container)*/
   top: -20px; /* movimentando para o topo */
-  left: 300px;
+  left: 400px;
 }
 
 nav#menu li {
