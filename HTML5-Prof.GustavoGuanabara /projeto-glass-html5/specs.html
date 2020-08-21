@@ -9,6 +9,9 @@
 </head>
 <script language="javascript" src="_javascript/funcoes.js"></script>
 <body>
+  <div id="containeir">  
+  <img id="icone" src="_imagens/glass-oculos-preto-peq.png"/>
+
 <div id="interface">
 <header id="cabecalho">
 <hgroup>
@@ -16,7 +19,7 @@
 <h2>A revolução do Google está chegando</h2>
 </hgroup> 
 
-<img id="icone" src="_imagens/glass-oculos-preto-peq.png"/>
+
 <nav id="menu"> 
   <h1>Menu Principal</h1>
   <ul>
@@ -47,7 +50,15 @@
       <img src="_imagens/glass-esquema-marcado.jpg" usemap="#meumapa">
       <!--Dentro da imagem criada com a tag IMG do HTML5, devemos usar um parâmetro USEMAP. A tag utilizada para criar um mapa de imagem é a tag MAP no HTML5.-->
       <map name="meumapa">
-        <area shape="rect" coords=""/>
+        <area shape="rect" coords="179,202,270,260" href="google-glass.html#tela" target="janela"/>  <!--coord sao 4 valores-->
+        <area shape="circle" coords="158,243,12" href="google-glass.html#camera" target="janela"/> <!--COORDENADAS sao tres valores aonde está localizada a imagem e o centro (vai dar um valor do top ate bottom, mas se dividir por 2 se encontra o valor do raio do circulo-->
+        <area shape="circle" coords="73,52,12" href="google-glass.html#gadgets" target="janela"/>
+        <area shape="poly" coords="28,143,83,216,84,249,27,169" href="google-glass.html#sensores" target="janela"/> <!--COORDENADAS Poligonas presicar ter mais pontos pq a imagem é irregular-->
+
+        <!--Shape: pode ser circular, react=retangular e outros-->
+        <!--o HREF vai chamar o arquivo html e após chama o ID tela q está localizado dentro do aruivo html-->
+        <!--TARGET vai relacionar a imagem com iframe NAME janela-->
+
       </map>
       <iframe src="google-glass.html" name="janela" id="frame-spec"></iframe>
     </section>
@@ -59,5 +70,6 @@
   <a href="http://facebook.com/" target="_blank">Facebook</a> | <a href="http://twitter.com"  target="_blank">Twitter</p>
   </footer>
   </div> <!-- End div interface -->
+</div> <!-- End div containeir -->
   </body>
   </html>

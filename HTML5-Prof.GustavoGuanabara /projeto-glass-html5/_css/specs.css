@@ -1,11 +1,23 @@
 @charset "UTF-8";
 
+#containeir {
+  width: 980px;
+}
+#containeir img#icone {
+  position: absolute;
+  left: 800px;
+  top: 70px;
+}
+
+#interface {
+  width: 950px;
+}
 section#conteudo {
   width: 1000px;
   margin: auto;
 }
 iframe#frame-spec {
-  width: 400px;
+  width: 430px;
   height: 280px;
   border: none;
   overflow: hidden;

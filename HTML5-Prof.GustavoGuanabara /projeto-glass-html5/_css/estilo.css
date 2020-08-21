@@ -13,6 +13,16 @@ body {
   font-size: 11pt;
 }
 
+#containeir {
+  width: 930px;
+}
+
+#containeir img#icone {
+  position: absolute;
+  left: 750px;
+  top: 70px;
+}
+
 #interface {
   width: 900px;
   background-color: #ffffff;
@@ -35,11 +45,6 @@ a:hover {
   text-decoration: underline;
 }
 
-#cabecalho img#icone {
-  position: absolute;
-  left: 910px;
-  top: 70px;
-}
 
 header#cabecalho {
   border-bottom: 1px #606060 solid; /* borda -> sequencia: espessura, cor, formato da borda (solid, dashed(tracejada), inset, outset, dotted (pontilhado), doubled(mas enfase) */
