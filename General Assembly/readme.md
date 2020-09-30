@@ -8,3 +8,7 @@
 
 ## PROJECT 2: BUILD A RESPONSIVE BLOG THEME
 ![Imgur](https://i.imgur.com/XQETt2b.png)
+
+## PROJECT 3: BUILD A SMALL BUSINESS WEBSITE
+![Imgur](https://github.com/thiagobardini/Web-Development-Courses)
+
