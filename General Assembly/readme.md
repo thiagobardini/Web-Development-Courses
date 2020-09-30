@@ -10,5 +10,5 @@
 ![Imgur](https://i.imgur.com/XQETt2b.png)
 
 ## PROJECT 3: BUILD A SMALL BUSINESS WEBSITE
-![Imgur](https://github.com/thiagobardini/Web-Development-Courses)
+![Imgur](https://i.imgur.com/H3cNNtI.png)
 
