@@ -5,8 +5,12 @@
 }
 #containeir img#icone {
   position: absolute;
-  left: 800px;
+  left: 776px;
   top: 70px;
+}
+
+nav#menu ul {
+  left: 764px;
 }
 
 #interface {

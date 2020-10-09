@@ -15,12 +15,13 @@ body {
 
 #containeir {
   width: 930px;
+  margin: 0 auto;
 }
 
 #containeir img#icone {
-  position: absolute;
-  left: 750px;
-  top: 70px;
+  position: relative;
+  left: 721px;
+  top: 190px;
 }
 
 #interface {
@@ -112,7 +113,7 @@ nav#menu ul {
   text-transform: uppercase; /* todas as palavras em letras MAIÚSCULA */
   position: absolute; /* Sendo que nav#menu já está como display block, usando o position absolute o containeir pode passar por cima dos documentos em qualquer lugar da pagina (livre dentro do site). Se usar position RELATIVA eu posso posicionar containeir por cima dos documentos que esse mini container estiver dentro (dentro do container)*/
   top: -20px; /* movimentando para o topo */
-  left: 400px;
+  left: 838px;
 }
 
 nav#menu li {
